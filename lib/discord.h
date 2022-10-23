@@ -1,0 +1,16 @@
+#pragma once
+
+#include "types.cpp"
+#include "core.cpp"
+#include "application_manager.cpp"
+#include "user_manager.cpp"
+#include "image_manager.cpp"
+#include "activity_manager.cpp"
+#include "relationship_manager.cpp"
+#include "lobby_manager.cpp"
+#include "network_manager.cpp"
+#include "overlay_manager.cpp"
+#include "storage_manager.cpp"
+#include "store_manager.cpp"
+#include "voice_manager.cpp"
+#include "achievement_manager.cpp"
