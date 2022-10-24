@@ -1,0 +1,16 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: sync
+    pull: always
+    image: alpine:latest
+    environment:
+      GH_PAT:
+        from_secret: GH_PAT
+    commands:
+      - apk add git
+      - git remote rm origin
+      - git remote add origin https://"$GH_PAT"@github.com/qwerzl/Yet-Another-AppleMusicRPC.git
+      - git push -u origin main
